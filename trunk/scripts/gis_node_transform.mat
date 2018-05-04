@@ -1,0 +1,65 @@
+# Created by Octave 3.2.4, Tue May 03 15:55:42 2011 EST <astivala@atreyu.csse.unimelb.edu.au>
+# name: A
+# type: matrix
+# rows: 3
+# columns: 3
+ 449255 424559 448027
+ 4637962 4636035 4624992
+ 1 1 1
+# name: B
+# type: matrix
+# rows: 2
+# columns: 3
+ 696700 617000 691900
+ 1903300 1896800 1861800
+# name: C
+# type: matrix
+# rows: 3
+# columns: 3
+ 449255 424559 448027
+ 4637962 4636035 4624992
+ 1 1 1
+# name: D
+# type: matrix
+# rows: 2
+# columns: 3
+ 449255 424559 448027
+ 4637962 4636035 4624992
+# name: L
+# type: matrix
+# rows: 2
+# columns: 3
+ 3.222170655663389 0.06500959405129916 -1052388.304755394
+ 0.01363304266323864 3.198400819090928 -12936886.17229423
+# name: M
+# type: matrix
+# rows: 2
+# columns: 3
+ 0.3103764860286599 -0.006308605612954645 245022.8712469685
+ -0.001322966105575204 0.3126831382483439 4043753.893457673
+# name: ans
+# type: matrix
+# rows: 2
+# columns: 1
+ 696700.0000000134
+ 1903300.000000037
+# name: x_gis
+# type: matrix
+# rows: 1
+# columns: 3
+ 449255 424559 448027
+# name: x_nodes
+# type: matrix
+# rows: 1
+# columns: 3
+ 696700 617000 691900
+# name: y_gis
+# type: matrix
+# rows: 1
+# columns: 3
+ 4637962 4636035 4624992
+# name: y_nodes
+# type: matrix
+# rows: 1
+# columns: 3
+ 1903300 1896800 1861800

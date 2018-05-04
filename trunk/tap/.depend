@@ -1,0 +1,28 @@
+parsetapfiles.o: parsetapfiles.c parsetapfiles.h tap_types.h
+tap_functions.o: tap_functions.c parsetapfiles.h tap_types.h \
+  tap_functions.h
+utils.o: utils.c utils.h
+sssp_pape.o: sssp_pape.c sssp_pape.h
+tap_frankwolfe.o: tap_frankwolfe.c parsetapfiles.h tap_types.h \
+  sssp_pape.h tap_functions.h utils.h
+tap_frankwolfe_pthread.o: tap_frankwolfe_pthread.c parsetapfiles.h \
+  tap_types.h sssp_pape.h tap_functions.h atomicdefs.h utils.h \
+  tap_frankwolfe_pthread.h
+tap_greedy.o: tap_greedy.c parsetapfiles.h tap_types.h sssp_pape.h \
+  tap_functions.h
+tap_main.o: tap_main.c utils.h parsetapfiles.h tap_types.h \
+  tap_frankwolfe_pthread.h tap_functions.h
+tap_mpi_main.o: tap_mpi_main.c utils.h parsetapfiles.h tap_types.h \
+  tap_functions.h tap_frankwolfe_pthread.h
+pape_kernels.o: pape_kernels.cu pape_kernels.h
+volume_update_kernels.o: volume_update_kernels.cu volume_update_kernels.h \
+  tap_types.h atomic_add_double_kernel.h
+pape_cuda_host.o: pape_cuda_host.cu pape_kernels.h pape_cuda_host.h \
+  utils.h
+volume_update_host.o: volume_update_host.cu volume_update_kernels.h \
+  tap_types.h volume_update_host.h utils.h
+tap_cuda_main.o: tap_cuda_main.cu utils.h parsetapfiles.h tap_types.h \
+  tap_frankwolfe_cuda.h tap_functions.h volume_update_host.h
+tap_frankwolfe_cuda.o: tap_frankwolfe_cuda.cu parsetapfiles.h tap_types.h \
+  pape_cuda_host.h tap_functions.h utils.h volume_update_host.h \
+  sssp_pape.h

@@ -1,0 +1,15 @@
+\begin{tabular}{lrrrr}
+\hline
+Data used &  $\Delta\mbox{VHT}$ computations  & Mean Error \% & Num Error $> 10\%$ \\
+\hline
+individual only  &  8  &  4.0  & 32  \\
+ significant pairwise  &  9  &  2.4  & 3  \\
+ all pairwise  &  36  &  0.68  & 2  \\
+ all subsets size $\leq$ 3   &  92  &  0.25  & 1  \\
+ all subsets size $\leq$ 4   &  162  &  0.12  & 0  \\
+ all subsets size $\leq$ 5   &  218  &  0.043  & 0  \\
+ all subsets size $\leq$ 6   &  246  &  0.0089  & 0  \\
+ all subsets size $\leq$ 7   &  254  &  0.0015  & 0  \\
+ all subsets size $\leq$ 8   &  255  &  0.0  & 0  \\
+ \hline
+\end{tabular}

@@ -1,0 +1,641 @@
+Linux tango078.vpac.org 2.6.32.23edac #1 SMP Tue Oct 12 13:39:35 EST 2010 x86_64 x86_64 x86_64 GNU/Linux
+Thu Jun 23 04:40:12 EST 2011
+threads = 0
+runNum = 1
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+total cost = 33659203.442207001149654
+3228.60user 0.04system 53:49.10elapsed 99%CPU (0avgtext+0avgdata 218144maxresident)k
+0inputs+0outputs (1major+13677minor)pagefaults 0swaps
+runNum = 2
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+total cost = 33659203.442207001149654
+3226.56user 0.20system 53:46.84elapsed 99%CPU (0avgtext+0avgdata 218160maxresident)k
+0inputs+0outputs (0major+13679minor)pagefaults 0swaps
+runNum = 3
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+total cost = 33659203.442207001149654
+3236.02user 0.14system 53:56.22elapsed 99%CPU (0avgtext+0avgdata 218160maxresident)k
+0inputs+0outputs (0major+13679minor)pagefaults 0swaps
+runNum = 4
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+total cost = 33659203.442207001149654
+3224.31user 0.13system 53:44.59elapsed 99%CPU (0avgtext+0avgdata 218144maxresident)k
+0inputs+0outputs (0major+13678minor)pagefaults 0swaps
+runNum = 5
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+total cost = 33659203.442207001149654
+3229.65user 0.08system 53:49.78elapsed 99%CPU (0avgtext+0avgdata 218160maxresident)k
+0inputs+0outputs (0major+13679minor)pagefaults 0swaps
+runNum = 6
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+total cost = 33659203.442207001149654
+3225.14user 0.10system 53:45.30elapsed 99%CPU (0avgtext+0avgdata 218144maxresident)k
+0inputs+0outputs (0major+13678minor)pagefaults 0swaps
+runNum = 7
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+total cost = 33659203.442207001149654
+3236.30user 0.10system 53:56.46elapsed 99%CPU (0avgtext+0avgdata 218160maxresident)k
+0inputs+0outputs (0major+13679minor)pagefaults 0swaps
+runNum = 8
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+total cost = 33659203.442207001149654
+3222.41user 0.09system 53:42.64elapsed 99%CPU (0avgtext+0avgdata 218160maxresident)k
+0inputs+0outputs (0major+13679minor)pagefaults 0swaps
+runNum = 9
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+total cost = 33659203.442207001149654
+3230.92user 0.16system 53:51.26elapsed 99%CPU (0avgtext+0avgdata 218160maxresident)k
+0inputs+0outputs (0major+13679minor)pagefaults 0swaps
+runNum = 10
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+total cost = 33659203.442207001149654
+3226.48user 0.15system 53:46.70elapsed 99%CPU (0avgtext+0avgdata 218144maxresident)k
+0inputs+0outputs (0major+13678minor)pagefaults 0swaps
+threads = 1
+runNum = 1
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153209447861 relative gap = 0.000132703428751 total cost = 33659203.442207001149654
+3921.10user 0.30system 1:05:26elapsed 99%CPU (0avgtext+0avgdata 218528maxresident)k
+0inputs+0outputs (1major+13821minor)pagefaults 0swaps
+runNum = 2
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153209447861 relative gap = 0.000132703428751 total cost = 33659203.442207001149654
+3918.78user 0.25system 1:05:24elapsed 99%CPU (0avgtext+0avgdata 218560maxresident)k
+0inputs+0outputs (0major+13823minor)pagefaults 0swaps
+runNum = 3
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153209447861 relative gap = 0.000132703428751 total cost = 33659203.442207001149654
+3919.57user 0.25system 1:05:25elapsed 99%CPU (0avgtext+0avgdata 218544maxresident)k
+0inputs+0outputs (0major+13822minor)pagefaults 0swaps
+runNum = 4
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153209447861 relative gap = 0.000132703428751 total cost = 33659203.442207001149654
+3900.58user 0.10system 1:05:05elapsed 99%CPU (0avgtext+0avgdata 218544maxresident)k
+0inputs+0outputs (0major+13823minor)pagefaults 0swaps
+runNum = 5
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153209447861 relative gap = 0.000132703428751 total cost = 33659203.442207001149654
+3916.96user 0.18system 1:05:22elapsed 99%CPU (0avgtext+0avgdata 218544maxresident)k
+0inputs+0outputs (0major+13822minor)pagefaults 0swaps
+runNum = 6
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153209447861 relative gap = 0.000132703428751 total cost = 33659203.442207001149654
+3918.75user 0.18system 1:05:23elapsed 99%CPU (0avgtext+0avgdata 218544maxresident)k
+0inputs+0outputs (0major+13822minor)pagefaults 0swaps
+runNum = 7
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153209447861 relative gap = 0.000132703428751 total cost = 33659203.442207001149654
+3918.69user 0.10system 1:05:24elapsed 99%CPU (0avgtext+0avgdata 218544maxresident)k
+0inputs+0outputs (0major+13822minor)pagefaults 0swaps
+runNum = 8
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153209447861 relative gap = 0.000132703428751 total cost = 33659203.442207001149654
+3909.99user 0.16system 1:05:15elapsed 99%CPU (0avgtext+0avgdata 218544maxresident)k
+0inputs+0outputs (0major+13822minor)pagefaults 0swaps
+runNum = 9
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153209447861 relative gap = 0.000132703428751 total cost = 33659203.442207001149654
+3914.79user 0.22system 1:05:20elapsed 99%CPU (0avgtext+0avgdata 218544maxresident)k
+0inputs+0outputs (0major+13822minor)pagefaults 0swaps
+runNum = 10
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153209447861 relative gap = 0.000132703428751 total cost = 33659203.442207001149654
+3908.82user 0.29system 1:05:14elapsed 99%CPU (0avgtext+0avgdata 218544maxresident)k
+0inputs+0outputs (0major+13823minor)pagefaults 0swaps
+threads = 2
+runNum = 1
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152743786573 relative gap = 0.000132703428749 total cost = 33659203.442205853760242
+4553.75user 0.18system 39:20.83elapsed 192%CPU (0avgtext+0avgdata 219808maxresident)k
+0inputs+0outputs (0major+13901minor)pagefaults 0swaps
+runNum = 2
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152747511864 relative gap = 0.000132703428748 total cost = 33659203.442205853760242
+4558.57user 0.28system 39:23.82elapsed 192%CPU (0avgtext+0avgdata 219808maxresident)k
+0inputs+0outputs (0major+13901minor)pagefaults 0swaps
+runNum = 3
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152754962444 relative gap = 0.000132703428749 total cost = 33659203.442205868661404
+4556.61user 0.29system 39:07.16elapsed 194%CPU (0avgtext+0avgdata 219808maxresident)k
+0inputs+0outputs (0major+13901minor)pagefaults 0swaps
+runNum = 4
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152743786573 relative gap = 0.000132703428749 total cost = 33659203.442205853760242
+4565.04user 0.19system 39:31.45elapsed 192%CPU (0avgtext+0avgdata 219808maxresident)k
+0inputs+0outputs (0major+13901minor)pagefaults 0swaps
+runNum = 5
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152743786573 relative gap = 0.000132703428748 total cost = 33659203.442205853760242
+4557.66user 0.14system 39:26.04elapsed 192%CPU (0avgtext+0avgdata 219808maxresident)k
+0inputs+0outputs (0major+13901minor)pagefaults 0swaps
+runNum = 6
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152751237154 relative gap = 0.000132703428749 total cost = 33659203.442205861210823
+4566.22user 0.27system 39:15.66elapsed 193%CPU (0avgtext+0avgdata 219808maxresident)k
+0inputs+0outputs (0major+13901minor)pagefaults 0swaps
+runNum = 7
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152743786573 relative gap = 0.000132703428749 total cost = 33659203.442205853760242
+4562.51user 0.25system 39:26.46elapsed 192%CPU (0avgtext+0avgdata 219824maxresident)k
+0inputs+0outputs (0major+13902minor)pagefaults 0swaps
+runNum = 8
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152747511864 relative gap = 0.000132703428749 total cost = 33659203.442205853760242
+4555.08user 0.30system 39:20.27elapsed 193%CPU (0avgtext+0avgdata 219792maxresident)k
+0inputs+0outputs (0major+13901minor)pagefaults 0swaps
+runNum = 9
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152747511864 relative gap = 0.000132703428748 total cost = 33659203.442205853760242
+4557.26user 0.26system 39:20.45elapsed 193%CPU (0avgtext+0avgdata 219792maxresident)k
+0inputs+0outputs (0major+13901minor)pagefaults 0swaps
+runNum = 10
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152743786573 relative gap = 0.000132703428749 total cost = 33659203.442205846309662
+4552.21user 0.21system 39:19.85elapsed 192%CPU (0avgtext+0avgdata 219824maxresident)k
+0inputs+0outputs (0major+13902minor)pagefaults 0swaps
+threads = 3
+runNum = 1
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152673006058 relative gap = 0.000132703428751 total cost = 33659203.442205667495728
+4780.47user 0.23system 28:06.81elapsed 283%CPU (0avgtext+0avgdata 221072maxresident)k
+0inputs+0outputs (0major+13979minor)pagefaults 0swaps
+runNum = 2
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152680456638 relative gap = 0.000132703428752 total cost = 33659203.442205667495728
+4791.42user 0.26system 28:03.19elapsed 284%CPU (0avgtext+0avgdata 221072maxresident)k
+0inputs+0outputs (0major+13979minor)pagefaults 0swaps
+runNum = 3
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152680456638 relative gap = 0.000132703428752 total cost = 33659203.442205674946308
+4791.51user 0.21system 28:00.24elapsed 285%CPU (0avgtext+0avgdata 221088maxresident)k
+0inputs+0outputs (0major+13980minor)pagefaults 0swaps
+runNum = 4
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152680456638 relative gap = 0.000132703428752 total cost = 33659203.442205667495728
+4786.68user 0.27system 28:01.69elapsed 284%CPU (0avgtext+0avgdata 221072maxresident)k
+0inputs+0outputs (0major+13979minor)pagefaults 0swaps
+runNum = 5
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152680456638 relative gap = 0.000132703428752 total cost = 33659203.442205674946308
+4792.64user 0.28system 28:00.44elapsed 285%CPU (0avgtext+0avgdata 221072maxresident)k
+0inputs+0outputs (0major+13979minor)pagefaults 0swaps
+runNum = 6
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152684181929 relative gap = 0.000132703428752 total cost = 33659203.442205674946308
+4790.95user 0.18system 28:00.38elapsed 285%CPU (0avgtext+0avgdata 221072maxresident)k
+0inputs+0outputs (0major+13979minor)pagefaults 0swaps
+runNum = 7
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152676731348 relative gap = 0.000132703428752 total cost = 33659203.442205652594566
+4792.39user 0.30system 28:20.09elapsed 281%CPU (0avgtext+0avgdata 221072maxresident)k
+0inputs+0outputs (0major+13979minor)pagefaults 0swaps
+runNum = 8
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152684181929 relative gap = 0.000132703428752 total cost = 33659203.442205674946308
+4779.92user 0.19system 27:58.23elapsed 284%CPU (0avgtext+0avgdata 221072maxresident)k
+0inputs+0outputs (0major+13979minor)pagefaults 0swaps
+runNum = 9
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152684181929 relative gap = 0.000132703428752 total cost = 33659203.442205674946308
+4783.21user 0.41system 27:57.97elapsed 285%CPU (0avgtext+0avgdata 221072maxresident)k
+0inputs+0outputs (0major+13979minor)pagefaults 0swaps
+runNum = 10
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152680456638 relative gap = 0.000132703428751 total cost = 33659203.442205674946308
+4797.46user 0.19system 28:03.65elapsed 284%CPU (0avgtext+0avgdata 221088maxresident)k
+0inputs+0outputs (0major+13980minor)pagefaults 0swaps
+threads = 4
+runNum = 1
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152464389801 relative gap = 0.000132703428748 total cost = 33659203.442205093801022
+5067.57user 0.22system 23:07.53elapsed 365%CPU (0avgtext+0avgdata 222320maxresident)k
+0inputs+0outputs (0major+14057minor)pagefaults 0swaps
+runNum = 2
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152468115091 relative gap = 0.000132703428748 total cost = 33659203.442205116152763
+5056.45user 0.31system 23:22.13elapsed 360%CPU (0avgtext+0avgdata 222320maxresident)k
+0inputs+0outputs (0major+14057minor)pagefaults 0swaps
+runNum = 3
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152460664511 relative gap = 0.000132703428748 total cost = 33659203.442205093801022
+5059.19user 0.17system 23:01.53elapsed 366%CPU (0avgtext+0avgdata 222320maxresident)k
+0inputs+0outputs (0major+14057minor)pagefaults 0swaps
+runNum = 4
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152468115091 relative gap = 0.000132703428748 total cost = 33659203.442205108702183
+5057.19user 0.24system 23:18.44elapsed 361%CPU (0avgtext+0avgdata 222320maxresident)k
+0inputs+0outputs (0major+14057minor)pagefaults 0swaps
+runNum = 5
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152471840382 relative gap = 0.000132703428748 total cost = 33659203.442205123603344
+5067.56user 0.31system 23:22.87elapsed 361%CPU (0avgtext+0avgdata 222320maxresident)k
+0inputs+0outputs (0major+14057minor)pagefaults 0swaps
+runNum = 6
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152456939220 relative gap = 0.000132703428748 total cost = 33659203.442205093801022
+5064.00user 0.28system 22:57.30elapsed 367%CPU (0avgtext+0avgdata 222320maxresident)k
+0inputs+0outputs (0major+14058minor)pagefaults 0swaps
+runNum = 7
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152468115091 relative gap = 0.000132703428748 total cost = 33659203.442205093801022
+5056.57user 0.25system 23:06.08elapsed 364%CPU (0avgtext+0avgdata 222304maxresident)k
+0inputs+0outputs (0major+14056minor)pagefaults 0swaps
+runNum = 8
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152464389801 relative gap = 0.000132703428748 total cost = 33659203.442205101251602
+5056.71user 0.32system 23:09.33elapsed 363%CPU (0avgtext+0avgdata 222304maxresident)k
+0inputs+0outputs (0major+14056minor)pagefaults 0swaps
+runNum = 9
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152471840382 relative gap = 0.000132703428749 total cost = 33659203.442205108702183
+5051.58user 0.34system 23:12.71elapsed 362%CPU (0avgtext+0avgdata 222320maxresident)k
+0inputs+0outputs (0major+14057minor)pagefaults 0swaps
+runNum = 10
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152468115091 relative gap = 0.000132703428748 total cost = 33659203.442205116152763
+5054.13user 0.30system 23:21.98elapsed 360%CPU (0avgtext+0avgdata 222304maxresident)k
+0inputs+0outputs (0major+14056minor)pagefaults 0swaps
+threads = 5
+runNum = 1
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152415961027 relative gap = 0.000132703428749 total cost = 33659203.442204944789410
+5302.79user 0.51system 19:42.25elapsed 448%CPU (0avgtext+0avgdata 223536maxresident)k
+0inputs+0outputs (0major+14133minor)pagefaults 0swaps
+runNum = 2
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152412235737 relative gap = 0.000132703428749 total cost = 33659203.442204937338829
+5299.30user 0.28system 19:41.44elapsed 448%CPU (0avgtext+0avgdata 223536maxresident)k
+0inputs+0outputs (0major+14133minor)pagefaults 0swaps
+runNum = 3
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152408510447 relative gap = 0.000132703428749 total cost = 33659203.442204944789410
+5292.80user 0.32system 19:39.22elapsed 448%CPU (0avgtext+0avgdata 223520maxresident)k
+0inputs+0outputs (0major+14132minor)pagefaults 0swaps
+runNum = 4
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152415961027 relative gap = 0.000132703428749 total cost = 33659203.442204937338829
+5305.68user 0.26system 19:53.22elapsed 444%CPU (0avgtext+0avgdata 223520maxresident)k
+0inputs+0outputs (0major+14132minor)pagefaults 0swaps
+runNum = 5
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152442038059 relative gap = 0.000132703428750 total cost = 33659203.442204996943474
+5306.60user 0.31system 19:29.06elapsed 453%CPU (0avgtext+0avgdata 223552maxresident)k
+0inputs+0outputs (0major+14134minor)pagefaults 0swaps
+runNum = 6
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152408510447 relative gap = 0.000132703428749 total cost = 33659203.442204937338829
+5304.22user 0.29system 19:40.79elapsed 449%CPU (0avgtext+0avgdata 223520maxresident)k
+0inputs+0outputs (0major+14133minor)pagefaults 0swaps
+runNum = 7
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152430862188 relative gap = 0.000132703428749 total cost = 33659203.442204967141151
+5305.33user 0.47system 19:34.27elapsed 451%CPU (0avgtext+0avgdata 223536maxresident)k
+0inputs+0outputs (0major+14133minor)pagefaults 0swaps
+runNum = 8
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152412235737 relative gap = 0.000132703428749 total cost = 33659203.442204937338829
+5295.52user 0.51system 19:38.85elapsed 449%CPU (0avgtext+0avgdata 223536maxresident)k
+0inputs+0outputs (0major+14133minor)pagefaults 0swaps
+runNum = 9
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152412235737 relative gap = 0.000132703428750 total cost = 33659203.442204937338829
+5295.46user 0.37system 19:39.45elapsed 449%CPU (0avgtext+0avgdata 223536maxresident)k
+0inputs+0outputs (0major+14133minor)pagefaults 0swaps
+runNum = 10
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152412235737 relative gap = 0.000132703428749 total cost = 33659203.442204937338829
+5297.31user 0.39system 19:39.07elapsed 449%CPU (0avgtext+0avgdata 223536maxresident)k
+0inputs+0outputs (0major+14133minor)pagefaults 0swaps
+threads = 6
+runNum = 1
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152985930443 relative gap = 0.000132703428751 total cost = 33659203.442206479609013
+5583.56user 0.32system 17:33.15elapsed 530%CPU (0avgtext+0avgdata 224784maxresident)k
+0inputs+0outputs (0major+14211minor)pagefaults 0swaps
+runNum = 2
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153000831604 relative gap = 0.000132703428750 total cost = 33659203.442206539213657
+5542.69user 0.22system 17:27.39elapsed 529%CPU (0avgtext+0avgdata 224800maxresident)k
+0inputs+0outputs (0major+14212minor)pagefaults 0swaps
+runNum = 3
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152993381023 relative gap = 0.000132703428751 total cost = 33659203.442206494510174
+5554.65user 0.50system 17:27.52elapsed 530%CPU (0avgtext+0avgdata 224768maxresident)k
+0inputs+0outputs (0major+14210minor)pagefaults 0swaps
+runNum = 4
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152997106314 relative gap = 0.000132703428752 total cost = 33659203.442206516861916
+5553.41user 0.47system 17:27.41elapsed 530%CPU (0avgtext+0avgdata 224800maxresident)k
+0inputs+0outputs (0major+14212minor)pagefaults 0swaps
+runNum = 5
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152993381023 relative gap = 0.000132703428751 total cost = 33659203.442206501960754
+5568.34user 0.40system 17:31.17elapsed 529%CPU (0avgtext+0avgdata 224784maxresident)k
+0inputs+0outputs (0major+14211minor)pagefaults 0swaps
+runNum = 6
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152997106314 relative gap = 0.000132703428751 total cost = 33659203.442206524312496
+5557.71user 0.35system 17:28.34elapsed 530%CPU (0avgtext+0avgdata 224768maxresident)k
+0inputs+0outputs (0major+14210minor)pagefaults 0swaps
+runNum = 7
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153004556894 relative gap = 0.000132703428751 total cost = 33659203.442206539213657
+5547.48user 0.47system 17:27.15elapsed 529%CPU (0avgtext+0avgdata 224768maxresident)k
+0inputs+0outputs (0major+14210minor)pagefaults 0swaps
+runNum = 8
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167153000831604 relative gap = 0.000132703428751 total cost = 33659203.442206531763077
+5561.98user 0.38system 17:29.16elapsed 530%CPU (0avgtext+0avgdata 224784maxresident)k
+0inputs+0outputs (0major+14211minor)pagefaults 0swaps
+runNum = 9
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152989655733 relative gap = 0.000132703428751 total cost = 33659203.442206494510174
+5570.19user 0.45system 17:31.77elapsed 529%CPU (0avgtext+0avgdata 224784maxresident)k
+0inputs+0outputs (0major+14211minor)pagefaults 0swaps
+runNum = 10
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152993381023 relative gap = 0.000132703428750 total cost = 33659203.442206516861916
+5550.86user 0.54system 17:27.72elapsed 529%CPU (0avgtext+0avgdata 224784maxresident)k
+0inputs+0outputs (0major+14211minor)pagefaults 0swaps
+threads = 7
+runNum = 1
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152617126703 relative gap = 0.000132703428750 total cost = 33659203.442205570638180
+5856.48user 0.56system 16:12.73elapsed 602%CPU (0avgtext+0avgdata 226016maxresident)k
+0inputs+0outputs (0major+14467minor)pagefaults 0swaps
+runNum = 2
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152613401413 relative gap = 0.000132703428749 total cost = 33659203.442205563187599
+5832.08user 0.43system 16:07.61elapsed 602%CPU (0avgtext+0avgdata 226000maxresident)k
+0inputs+0outputs (0major+14466minor)pagefaults 0swaps
+runNum = 3
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152628302574 relative gap = 0.000132703428749 total cost = 33659203.442205600440502
+5886.12user 0.33system 16:10.35elapsed 606%CPU (0avgtext+0avgdata 225984maxresident)k
+0inputs+0outputs (0major+14466minor)pagefaults 0swaps
+runNum = 4
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152617126703 relative gap = 0.000132703428748 total cost = 33659203.442205570638180
+5841.70user 0.58system 16:09.94elapsed 602%CPU (0avgtext+0avgdata 226032maxresident)k
+0inputs+0outputs (0major+14468minor)pagefaults 0swaps
+runNum = 5
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152598500252 relative gap = 0.000132703428749 total cost = 33659203.442205525934696
+5795.83user 0.53system 16:08.83elapsed 598%CPU (0avgtext+0avgdata 226016maxresident)k
+0inputs+0outputs (0major+14467minor)pagefaults 0swaps
+runNum = 6
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152628302574 relative gap = 0.000132703428750 total cost = 33659203.442205607891083
+5885.61user 0.35system 16:11.50elapsed 605%CPU (0avgtext+0avgdata 226016maxresident)k
+0inputs+0outputs (0major+14467minor)pagefaults 0swaps
+runNum = 7
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152624577284 relative gap = 0.000132703428749 total cost = 33659203.442205607891083
+5912.00user 0.45system 16:13.14elapsed 607%CPU (0avgtext+0avgdata 226016maxresident)k
+0inputs+0outputs (0major+14467minor)pagefaults 0swaps
+runNum = 8
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152624577284 relative gap = 0.000132703428749 total cost = 33659203.442205600440502
+5902.17user 0.38system 16:12.57elapsed 606%CPU (0avgtext+0avgdata 226032maxresident)k
+0inputs+0outputs (0major+14468minor)pagefaults 0swaps
+runNum = 9
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152609676123 relative gap = 0.000132703428749 total cost = 33659203.442205548286438
+5814.76user 0.53system 16:07.41elapsed 601%CPU (0avgtext+0avgdata 226032maxresident)k
+0inputs+0outputs (0major+14468minor)pagefaults 0swaps
+runNum = 10
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152628302574 relative gap = 0.000132703428750 total cost = 33659203.442205615341663
+5877.28user 0.36system 16:07.03elapsed 607%CPU (0avgtext+0avgdata 226032maxresident)k
+0inputs+0outputs (0major+14468minor)pagefaults 0swaps
+threads = 8
+runNum = 1
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152341455221 relative gap = 0.000132703428750 total cost = 33659203.442204535007477
+6067.91user 0.38system 14:53.60elapsed 679%CPU (0avgtext+0avgdata 227232maxresident)k
+0inputs+0outputs (0major+14569minor)pagefaults 0swaps
+runNum = 2
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152334004641 relative gap = 0.000132703428750 total cost = 33659203.442204527556896
+6057.86user 0.53system 14:57.39elapsed 675%CPU (0avgtext+0avgdata 227216maxresident)k
+0inputs+0outputs (0major+14567minor)pagefaults 0swaps
+runNum = 3
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152326554060 relative gap = 0.000132703428749 total cost = 33659203.442204512655735
+6074.99user 0.58system 15:03.40elapsed 672%CPU (0avgtext+0avgdata 227232maxresident)k
+0inputs+0outputs (0major+14568minor)pagefaults 0swaps
+runNum = 4
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152345180511 relative gap = 0.000132703428750 total cost = 33659203.442204535007477
+6063.59user 0.58system 14:52.93elapsed 679%CPU (0avgtext+0avgdata 227232maxresident)k
+0inputs+0outputs (0major+14568minor)pagefaults 0swaps
+runNum = 5
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152330279350 relative gap = 0.000132703428750 total cost = 33659203.442204535007477
+6066.05user 0.41system 14:55.78elapsed 677%CPU (0avgtext+0avgdata 227232maxresident)k
+0inputs+0outputs (0major+14568minor)pagefaults 0swaps
+runNum = 6
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152330279350 relative gap = 0.000132703428750 total cost = 33659203.442204527556896
+6058.36user 0.42system 14:54.66elapsed 677%CPU (0avgtext+0avgdata 227232maxresident)k
+0inputs+0outputs (0major+14568minor)pagefaults 0swaps
+runNum = 7
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152334004641 relative gap = 0.000132703428750 total cost = 33659203.442204527556896
+6063.66user 0.61system 14:59.54elapsed 674%CPU (0avgtext+0avgdata 227232maxresident)k
+0inputs+0outputs (0major+14568minor)pagefaults 0swaps
+runNum = 8
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152334004641 relative gap = 0.000132703428750 total cost = 33659203.442204535007477
+6075.64user 0.44system 15:01.01elapsed 674%CPU (0avgtext+0avgdata 227232maxresident)k
+0inputs+0outputs (0major+14568minor)pagefaults 0swaps
+runNum = 9
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152337729931 relative gap = 0.000132703428749 total cost = 33659203.442204535007477
+6054.28user 0.48system 14:51.01elapsed 679%CPU (0avgtext+0avgdata 227216maxresident)k
+0inputs+0outputs (0major+14567minor)pagefaults 0swaps
+runNum = 10
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+iterations = 1000 objective value = 25848111.167152330279350 relative gap = 0.000132703428750 total cost = 33659203.442204520106316
+6062.89user 0.54system 14:58.19elapsed 675%CPU (0avgtext+0avgdata 227232maxresident)k
+0inputs+0outputs (0major+14568minor)pagefaults 0swaps

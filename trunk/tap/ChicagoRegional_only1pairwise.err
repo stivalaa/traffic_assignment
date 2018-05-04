@@ -1,0 +1,10 @@
+MPI rank 1 (carlton) processing id 07_94_0027_and_07_96_0013
+[add 07_94_0027] initnode 1958 termnode 10321  capacity 1080.000000
+[add 07_94_0027] initnode 10321 termnode 1958  capacity 1080.000000
+[add 07_96_0013] initnode 10321 termnode 12414  capacity 1080.000000
+[add 07_96_0013] initnode 12414 termnode 10321  capacity 1080.000000
+warning: node 9365 has no links out
+warning: node 12976 has no links out
+warning: node 12977 has no links out
+MPI rank 1 (carlton) id 07_94_0027_and_07_96_0013 iterations 9881 objective value 25837586.812519010156393 relative gap 0.000011993926967 time 20197.10s
+id = 07_94_0027_and_07_96_0013 VHT = 33636880.543382

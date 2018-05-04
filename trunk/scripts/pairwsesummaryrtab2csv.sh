@@ -1,0 +1,1 @@
+grep -v '^#' /var/tmp/compare_pairwise_linkflow_summary.rtab | awk '{if (FNR == 1) {printf "%s\tSigDiff\n", $0} else {if ($3 > 0.1 || $3 < -0.1) {sig="True"} else {sig="False"} ; printf "%s\t%s\n", $0, sig}}' | tr '\t' ',' 

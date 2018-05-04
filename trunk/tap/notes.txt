@@ -1,0 +1,312 @@
+tap_greedy:
+
+24931166.044641  Chicago orig. total cost (atreyu)
+24931143.292997  modified. (atreyu)
+
+note suspicious no decimal places on tango nv3 but not atreyu: something 
+going on there (some difference in compiler/machine handling of fp/int roungin?)
+
+24931140.000000 Chicago orig. (tango nv3)
+24931120.000000  Chicago modified (tango nv3)
+24931418.000000 Chicago orig. (tango nv3, CUDA GTX285)
+24931382.000000 Chicago modified (tango nv3, CUDA GTX285)
+
+Variation in VHT on different machine etc.  can be larger than actual
+change due to a modified road, when using the greedy heuristic
+algorithm.  (NB using float not double now to be same as CUDA - maybe
+should use double again?) [(Thu Apr 7 10:47:11 EST 2011) Turns out
+problem was using float not double - when doing back to double
+different restults again but have decimal places - this also caused
+the problem on atreyu (only) when using -O (but not without it in
+debug) of Winnipeg failing entirely with 'no path' errors etc.].
+
+ADS
+Wed Apr  6 17:51:32 EST 2011
+
+
+
+Chicago 10 iterations, tango (nodes=1:ppn=8), "real" time
+
+tap_frankwolfe (no threads)		0m43.882s
+tap_frankwolfe_pthreads 1 thread	0m47.426s
+tap_frankwolfe_pthreads 2 threads	0m31.318s
+tap_frankwolfe_pthreads 4 threads	0m24.063s
+tap_frankwolfe_pthreads 8 threads	0m20.518s
+
+NB quite a lot of overhead at initialization, maybe 100 iterations more 
+useful:
+
+tap_frankwolfe (no threads)		5m56.755s
+tap_frankwolfe_pthreads 1 thread	
+tap_frankwolfe_pthreads 2 threads
+tap_frankwolfe_pthreads 4 threads
+tap_frankwolfe_pthreads 8 threads	2m52.719s
+
+
+Seems like the pthreads overhead or maybe some false sharing or other
+memory bus/cache conflicts need looking into to get decent results
+from pthreads (maybe MPI would work better for this?)
+
+ADS
+Mon Apr 18 16:25:03 EST 2011
+
+In fact, having used elapsed time (not getrusage()) to show times
+and separately show shortest path and total assign time,
+unexepcedly lots of time NOT in shortest paths e.g. on tango
+might have (for one thread) 2161ms in shortest path and 4203ms total
+for an iteration, for 4 threads, only 596ms in shorrest path but
+still total 2098ms for the iteration.
+
+with 4 threads (on tango), gprof (with gprof-helper.so) shows proporition
+of time in sssp_pape() and fw_assign() more or less reversed, ie.
+fw_assign() now has 64% of time and sssp_pape() only 35% instead of (as
+for single thread) over 70% in sssp_pape() - need to parallelize more
+
+Solaris (mundara.cs.mu.oz.au) UltraSPARC, SUNWspro cc compiler
+(can't expect good sacalability here anyway since using floating point
+and only single FPU per chip on UltraSPARC I):
+
+tap_frankwolfe (no threads)		54m27.280s
+tap_frankwolfe_pthreads 1 thread	57m55.005s
+tap_frankwolfe_pthreads 2 threads	40m25.211s
+tap_frankwolfe_pthreads 4 threads	31m26.563s
+tap_frankwolfe_pthreads 8 threads	27m51.093s
+
+(simillarly on Solaris, over 70% now spent in fw_assign() not sssp_pape()
+e.g. on 8 threads, an iteratino has 16342 ms total but only 3630 ms in
+sssp_pape().)
+
+Tue Apr 19 11:18:12 EST 2011
+
+NB using Amdahl's Law, if 90% is parallizable can only get 10x speedup
+at most anyway, and if only 75% parallizaable the max speedup is only 4x.
+With parllizating sssp_pape() AND the link volume update the
+parallized part is about 80% which yields a max. possible speedup
+of 5x. (NB this seems to depend on architecutre - on PPC64 seems more
+like parallizable ssp_pape() part is 95% giving limit of 20x speedup
+(but only 8 cores anyway so can't reach limit) - but also notice
+terrible slowdown between unthread and single-thread pthreads on
+PPC64 - latter is about 1/3 speed of former - something wrong here,
+this did not happen with paralleldp stuff.)
+
+Having paralelized the link volumes updates as well as the shortest paths,
+we now have:
+
+Solaris (mundara.cs.mu.oz.au) UltraSPARC, SUNWspro cc compiler
+(can't expect good sacalability here anyway since using floating point
+and only single FPU per chip on UltraSPARC I):
+
+tap_frankwolfe (no threads)		54m27.280s
+tap_frankwolfe_pthreads 1 thread	97m34.196s ! large slowdown cf above
+tap_frankwolfe_pthreads 2 threads	53m17.252s
+tap_frankwolfe_pthreads 4 threads	29m19.466s
+tap_frankwolfe_pthreads 8 threads	18m3.437s
+tap_frankwolfe_pthreads 32 threads	10m32.423s
+
+Tango (nodes=1:ppn=8): [still waiting for job, may not start until next week!]
+
+tap_frankwolfe (no threads)		
+tap_frankwolfe_pthreads 1 thread	
+tap_frankwolfe_pthreads 2 threads	
+tap_frankwolfe_pthreads 4 threads	
+tap_frankwolfe_pthreads 8 threads	
+
+so on Fermi (node enrico) instead:
+
+tap_frankwolfe (no threads)		5m29.253s
+tap_frankwolfe_pthreads 1 thread	6m53.606s
+tap_frankwolfe_pthreads 2 threads	3m46.049s
+tap_frankwolfe_pthreads 4 threads	2m8.128s
+
+
+mungera (PPC64)
+
+tap_frankwolfe (no threads)		12m19.873s
+tap_frankwolfe_pthreads 1 thread	41m35.532s !compare above: some problem
+tap_frankwolfe_pthreads 2 threads	
+tap_frankwolfe_pthreads 4 threads	
+tap_frankwolfe_pthreads 8 threads	8m7.143s
+
+
+ADS
+Tue Apr 19 15:11:03 EST 2011
+
+Somewhat strangely, after modifying to not needlessly start and wait
+for many threads each iteration and instead divide total origin nodes
+by num_threads, times (for mundara and mungera) are not MUCH
+from the above (are better on mungera though)
+ 
+(mungera 1 thread 31m30s [NB 12m for no-threaded]  8 thread 6m22s,  [better]
+ mundara 1 thread 97m42s, 32 thread 9m29s) [not much different]
+
+After changing to only malloc all space up front, not each iteration:
+
+mungera 1 thread 41m16s   8 thread 6m30s   [slightly better on 8 threads]
+mundara 1 thread 97m59s, 32 thread 9m28s   [slightly better on 32 threads]
+enrico  1 thread 6m24s ,  4 thread 1m48s   [slightly better]
+
+ADS
+Thu Apr 21 09:00:18 EST 2011
+
+Tango (nodes=1:ppn=8): 
+
+tap_frankwolfe (no threads)		5m48s
+tap_frankwolfe_pthreads 1 thread	6m54s
+tap_frankwolfe_pthreads 2 threads	4m04s
+tap_frankwolfe_pthreads 4 threads	2m20s
+tap_frankwolfe_pthreads 8 threads	1m28s
+
+Carlton (linux x86_64 Dell Optiplex 980 Intel(R) Core(TM) i7 CPU 860 @
+2.80GHz stepping 0): [NB apparently this is "hyperhtreading" and there
+really are only 4 cores].
+
+tap_frankwolfe (no threads)		3m21s
+tap_frankwolfe_pthreads 1 thread	4m21s
+tap_frankwolfe_pthreads 2 threads	2m23s
+tap_frankwolfe_pthreads 4 threads	1m25s
+tap_frankwolfe_pthreads 8 threads	1m00s
+
+
+ADS
+Wed Apr 27 13:07:34 EST 2011
+
+
+
+29April2011
+carlton.cs.mu.oz.au:
+
+unthreaded sssp_pape_lll:
+
+iter = 10000 objective value = 25845912.479772992432117 relative gap = 0.000011994618103 average exccess cost = 0.000267522275443 total cost = 33657131.918849706649780 (2000 ms)
+total cost = 33657138.663498580455780
+
+real	333m36.425s
+user	332m57.240s
+sys	0m0.170s
+astivala@carlton:~/tap$ 
+
+
+8 threads sssp_pape:
+
+iter = 10000 objective value = 25845912.206669997423887 relative gap = 0.000011712991844 average exccess cost = 0.000282070169318 total cost = 33657142.280681915581226 (608 ms)
+total cost = 33657135.213843449950218
+
+real	100m14.535s
+user	688m19.170s
+sys	0m3.350s
+astivala@carlton:~/tap$ 
+
+
+1 thread sssp_pape:
+
+shortest path total time 2499 ms
+iter = 10000 objective value = 25845912.206670764833689 relative gap = 0.000011712991842 average exccess cost = 0.000282070169324 total cost = 33657142.280684255063534 (2568 ms)
+total cost = 33657135.213845811784267
+
+real	427m45.016s
+user	426m4.420s
+sys	0m2.030s
+
+
+
+
+atreyu
+
+prevnodefirst:
+
+iter = 97 objective value = 25893520.755328796803951 relative gap = 0.002580353312794 average exccess cost = 0.050618166957758 total cost = 33719601.844093792140484 (7563 ms)
+iter = 98 objective value = 25892854.478998981416225 relative gap = 0.002554555524828 average exccess cost = 0.053630530065218 total cost = 33719567.460171110928059 (7561 ms)
+iter = 99 objective value = 25892096.732090860605240 relative gap = 0.002525216055312 average exccess cost = 0.053939775661457 total cost = 33717790.618179000914097 (7467 ms)
+iter = 100 objective value = 25891445.055910021066666 relative gap = 0.002499983575658 average exccess cost = 0.053925828482552 total cost = 33715010.998807854950428 (7600 ms)
+total cost = 33715189.922966197133064
+
+real	14m58.162s
+user	14m47.755s
+sys	0m0.377s
+[astivala@atreyu tap]$ 
+
+SLF (no LLL) (using same code as above with temp. change to do SLF not prevnode):
+
+
+
+iter = 97 objective value = 25892759.455474015325308 relative gap = 0.002612845922255 average exccess cost = 0.056511412895838 total cost = 33717481.602618202567101 (8235 ms)
+iter = 98 objective value = 25891978.232645884156227 relative gap = 0.002582595610605 average exccess cost = 0.049205952976816 total cost = 33715851.005534052848816 (8275 ms)
+iter = 99 objective value = 25891252.400526843965054 relative gap = 0.002554490123904 average exccess cost = 0.050668474810621 total cost = 33715873.456937529146671 (8172 ms)
+iter = 100 objective value = 25890537.874815925955772 relative gap = 0.002526822441062 average exccess cost = 0.049296849774284 total cost = 33714373.530842207372189 (8258 ms)
+total cost = 33712612.279697507619858
+
+real	15m48.633s
+user	15m35.989s
+sys	0m0.479s
+[astivala@atreyu tap]$ 
+
+
+prevnodefirst:
+
+iter = 10000 objective value = 25845911.783178213983774 relative gap = 0.000011687711348 average exccess cost = 0.000281387510141 total cost = 33657147.557002797722816 (7102 ms)
+total cost = 33657138.471660211682320
+
+real	1217m13.009s
+user	1205m44.209s
+sys	0m31.377s
+
+so only down to 7102ms/iteration at the end - does not get increasingly faster
+with more iterations to any great degree.
+
+Mon May  2 09:38:43 EST 2011
+Linux atreyu.csse.unimelb.edu.au 2.6.35.12-88.fc14.i686.PAE #1 SMP Thu Mar 31 21:54:35 UTC 2011 i686 i686 i386 GNU/Linux
+
+
+Carlton, 8 threads sssp_pape_lll() [NB apparently this is
+ "hyperhtreading" and there really are only 4 cores]:
+
+shortest path total time 634 ms
+iter = 10000 objective value = 25845912.479772165417671 relative gap = 0.000011994618103 average exccess cost = 0.000267522275466 total cost = 33657131.918847315013409 (701 ms)
+total cost = 33657138.663496226072311
+
+real	91m11.859s
+user	614m33.650s
+sys	0m4.270s
+
+Carlton, 4 threads sssp_pape_lll():
+
+shortest path total time 691 ms
+iter = 10000 objective value = 25845912.479772355407476 relative gap = 0.000011994618105 average exccess cost = 0.000267522275451 total cost = 33657131.918847799301147 (756 ms)
+total cost = 33657138.663496762514114
+
+real	126m50.033s
+user	453m37.900s
+sys	0m1.940s
+astivala@carlton:~/tap$ 
+
+
+
+atreyu, SLF (no LLL) (using same code but with temp. change to do SLF not prevnode):
+
+iter = 10000 objective value = 25845912.006409849971533 relative gap = 0.000011800612272 average exccess cost = 0.000273828959786 total cost = 33657141.217709258198738 (8803 ms)
+total cost = 33657147.069206468760967
+
+real	1403m47.215s
+user	1388m10.197s
+sys	0m38.969s
+[astivala@atreyu tap]$ 
+[using prevnode heuristic was 1217m13s so that did not gain much].
+
+
+tango, 8 threads sssp_pape_lll(): 
+
+iter = 10000 objective value = 25845912.479772124439478 relative gap = 0.000011994618104 average exccess cost = 0.000267522275460 total cost = 33657131.918847166001797 (925 ms)
+total cost = 33657138.663496151566505
+60999.22user 4.79system 2:33:25elapsed 662%CPU (0avgtext+0avgdata 227264maxresident)k
+0inputs+0outputs (1major+14569minor)pagefaults 0swaps
+
+tango, 4 threads sssp_pape_lll():
+
+iter = 10000 objective value = 25845912.479772325605154 relative gap = 0.000011994618106 average exccess cost = 0.000267522275463 total cost = 33657131.918847724795341 (1383 ms)
+total cost = 33657138.663496710360050
+50265.46user 3.38system 4:17:04elapsed 325%CPU (0avgtext+0avgdata 222304maxresident)k
+0inputs+0outputs (1major+14058minor)pagefaults 0swaps
+[alexs@tango tap]$ 
+
+
+[original FW from Bar-Gera ended after 79211s (22 hours+) at 6258 iterations]

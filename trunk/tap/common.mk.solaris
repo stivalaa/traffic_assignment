@@ -1,0 +1,52 @@
+###############################################################################
+#
+# File      : common.mk.solaris
+# Author    : Alex Stivala (astivala)
+# Created   : April 2009
+#
+# $Id: Makefile 1690 2008-07-16 04:35:47Z astivala $
+#
+# Definitions of compilers and compile options for Solaris.
+# (Developed on 
+# SunOS mundara 5.10 Generic_137111-02 sun4v sparc SUNW,Sun-Fire-T200 Solaris
+# with
+# cc: Sun C 5.9 SunOS_sparc Patch 124867-07 2008/06/24)
+#
+# Use GNU make.
+#
+# set MODE=DEBUG to build with debugging and profiling on. Otherwise
+# default is to build with optimizations on and no debug or profile.
+#
+#
+###############################################################################
+
+CC           = /opt/SUNWspro/bin/cc
+LD           = /opt/SUNWspro/bin/cc
+
+
+CPPFLAGS = -DUNIX  -DSOLARIS -D_POSIX_PTHREAD_SEMANTICS
+LDFLAGS =   #-pg
+OPTFLAGS = -O3  #-pg
+CDEBUG = -g -pg -DDEBUG
+CFLAGS = #-mt
+
+ifeq ($(MODE),DEBUG)
+    CFLAGS += $(CDEBUG)
+    LDFLAGS += -g
+else
+    CFLAGS += $(OPTFLAGS)
+endif
+
+PTHREAD_CFLAGS = -mt 
+PTHREAD_LDFLAGS = -mt -lpthread
+
+
+LDLIBPATH  = 
+LDLIBS     = -lm
+
+
+# Program to build TAGS file for EMACS
+MAKETAGS   = etags
+
+MAKEDEPEND = gcc -MM $(CPPFLAGS)
+

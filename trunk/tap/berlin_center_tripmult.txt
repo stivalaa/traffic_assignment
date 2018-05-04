@@ -1,0 +1,4 @@
+~ trip O-D demand data modifications file for Berlin center
+~ 100% increase in all trips
+~ChangeId	Type	Orig	Dest	Multiplier
+double_all	ALL	0	0	2.0
