@@ -1,0 +1,73 @@
+#
+#  -DBLAS_ERRORS_ARE_FATAL  Will stop execution of program
+#                           otherwise, blas routines just return error code
+#                           as described by the standard.
+#  							
+
+
+#CFLAGS = -g -ansi -Wall  -pedantic -DBLAS_ERRORS_ARE_FATAL
+CFLAGS = -O3 -DBLAS_ERRORS_ARE_FATAL
+
+CFLAGS += -D_XOPEN_SOURCE=600 # needed for fmin()
+
+SPARSE_BLAS_A = libsparseblas.a
+
+
+SPVEC = spvec_double.o
+CSR = csr_double.o $(SPVEC)
+SPBLASI_MATRIX = spblasi_matrix.o spblasi_matrix_double.o \
+        spblasi_matrix_prop.o $(CSR)  microblas_double.o
+SPBLASI_TABLE = spblasi_table.o table.o
+BLAS_MALLOC = blas_malloc.o
+
+SPARSE_BLAS_OBJ = blas_sparse_handle.o blas_sparse_L1_double.o $(MVIO)  \
+    blas_sparse_L23_double.o $(SPBLASI_TABLE) $(SPBLASI_MATRIX) $(BLAS_MALLOC)
+
+
+all: lib
+
+lib: $(SPARSE_BLAS_A)
+
+
+$(SPARSE_BLAS_A) : $(SPARSE_BLAS_OBJ)
+	ar rv $(SPARSE_BLAS_A) $(SPARSE_BLAS_OBJ) ;
+	ranlib $(SPARSE_BLAS_A)
+
+
+clean:
+	/bin/rm -f $(SPARSE_BLAS_OBJ)
+
+wipe:
+	/bin/rm -f $(SPARSE_BLAS_OBJ) $(SPARSE_BLAS_A)
+
+
+blas_malloc.o: blas_malloc.c blas_malloc.h
+blas_sparse_handle.o: blas_sparse_handle.c blas_sparse.h blas_enum.h \
+  blas_sparse_proto.h spblasi_error.h spblasi_matrix.h \
+  spblasi_matrix_prop.h spblasi_matrix_state.h spblasi_table.h
+blas_sparse_L1_double.o: blas_sparse_L1_double.c blas_sparse.h \
+  blas_enum.h blas_sparse_proto.h spblasi_error.h
+blas_sparse_L23_double.o: blas_sparse_L23_double.c blas_malloc.h \
+  blas_sparse.h blas_enum.h blas_sparse_proto.h spblasi_error.h \
+  spblasi_matrix_prop.h spblasi_matrix_double.h spblasi_matrix.h \
+  spblasi_matrix_state.h csr_double.h spvec_double.h spblasi_table.h
+csr_double.o: csr_double.c blas.h blas_dense.h blas_enum.h \
+  blas_dense_proto.h blas_sparse.h blas_sparse_proto.h blas_extended.h \
+  blas_extended_proto.h spblasi_error.h blas_malloc.h csr_double.h \
+  spvec_double.h
+microblas_double.o: microblas_double.c microblas_double.h
+spblasi_matrix.o: spblasi_matrix.c blas_malloc.h spblasi_matrix.h \
+  spblasi_matrix_prop.h spblasi_matrix_state.h spblasi_matrix_double.h \
+  blas_enum.h csr_double.h spvec_double.h spblasi_error.h
+spblasi_matrix_double.o: spblasi_matrix_double.c blas_malloc.h \
+  spblasi_matrix.h spblasi_matrix_prop.h spblasi_matrix_state.h \
+  spblasi_matrix_double.h blas_enum.h csr_double.h spvec_double.h \
+  spblasi_error.h microblas_double.h
+spblasi_matrix_prop.o: spblasi_matrix_prop.c spblasi_matrix_prop.h
+spblasi_table_1.o: spblasi_table_1.c blas_malloc.h spblasi_matrix.h \
+  spblasi_matrix_prop.h spblasi_matrix_state.h spblasi_table.h
+spblasi_table.o: spblasi_table.c blas_malloc.h spblasi_matrix.h \
+  spblasi_matrix_prop.h spblasi_matrix_state.h table.h
+spvec_double.o: spvec_double.c blas_malloc.h spblasi_error.h \
+  spvec_double.h
+table.o: table.c table.h

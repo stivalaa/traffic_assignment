@@ -1,0 +1,13 @@
+The spblas_0_8/ directory contains the Sparse BLAS
+refefernce immplemntation modified to use the 
+(min,+) algebra (for dusmv only) 
+
+the cusp/ directory contains the CUSP sparse linear
+algrabra for CUDA library modified to use
+the (min,+) algebra (for spmv on host and GPU using
+ELL format only), derived from
+CUSP v.0.2.0 from http://code.google.com/p/cusp-library/
+
+
+ADS
+$Id: README 842 2011-11-10 02:10:18Z astivala $

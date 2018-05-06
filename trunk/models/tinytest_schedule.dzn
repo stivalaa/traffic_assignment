@@ -1,0 +1,23 @@
+numperiods = 3;
+interestRate = 0.04;
+VHT2dollarFactor = 5840.00; % 365 * 16.00;
+n = 2      ;
+Budget  = [300.0, 405.0 , 400.0];
+cost = [50.0,70.0];
+benefitVHT = [| 762.0, 2083.0,
+              | 762.0, 2083.0,
+              | 762.0, 2083.0,
+              |];
+upgradeName = ["extraLane1", "newLink1"];
+PairMinusSumVHT_list = %array3d(Upgrades, Upgrades, 1..numperiods,
+                  [ 0.0, -10.0,
+                   -10.0, 0.0,
+
+                    0.0, -17.0,
+                   -18.0, 0.0,
+
+                    0.0, -17.0,
+                   -18.0, 0.0,
+
+                  ];
+

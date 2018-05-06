@@ -1,0 +1,10 @@
+
+n = 2      ;
+Budget  = 500; 
+cost = [50,50];   
+benefitVHT = [762, 2083];
+upgradeName = ["extraLane1", "newLink1"];
+PairMinusSumVHT = [| 0, -10,
+                   | -10, 0
+                  |];
+

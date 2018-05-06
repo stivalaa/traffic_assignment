@@ -1,0 +1,30 @@
+Implementation of single-source shortest path based on:
+
+Okuyama, Ino, Hagihara 2008 "A Task Parallel Algorithm for Computing
+the costs of All-Pairs Shortest Paths on the CUDA-compatible GPU"
+Intl. Symp. Parallel Distributed Processing with Applications. 284-291
+
+See also:
+
+Harish and Narayanan 2007 "Accelerating Large Graph Algorithms on the GPU
+Using CUDA" HiPC 2007, LNCS 4873: 197-208
+
+and:
+
+Martin, Torres, Gavilanes "CUDA Solutions for the SSSP Problem"
+ICCS 2009, LNCS 5544: 904-913
+
+(this latter describes why the Harish and Naryanan algorithm contains
+a bug (write-after-write inconsisnecty), note the Harish&Narayanan
+algorithm is also the basis of Okuyama et al's algorithm for solving
+serveral SSSPs at once for higher efficiency).
+
+
+The sssp_gold.cpp module for verifying the results uses the Dijkstra's
+algorithm implementation in the Boost Graph Library.
+
+The sssp_pape.c module uses the d'Esopo-Pape label-correcting algorithm
+(on host CPU) for further comparison.
+
+ADS
+Tue Feb 15 10:38:51 EST 2011

@@ -1,0 +1,7 @@
+sssp_gold.o: sssp_gold.cpp sssp_gold.h sssp.h
+sssp.o: sssp.cu sssp.h sssp_gold.h sssp_pape.h pape_cuda_host.h \
+  bellmanford_spblas.h bellmanford_cusp.h
+pape_cuda_host.o: pape_cuda_host.cu sssp.h pape_kernels.h \
+  pape_cuda_host.h
+sssp_gold.o: sssp_gold.h sssp.h
+sssp.o: sssp.h

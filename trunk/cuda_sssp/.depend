@@ -1,0 +1,13 @@
+sssp_gold.o: sssp_gold.cpp sssp_gold.h sssp.h
+harish_kernels.o: harish_kernels.h
+okuyama_kernels.o: okuyama_kernels.h atomic_devfunc_types.h
+sssp_gold.o: sssp_gold.h sssp.h
+sssp.o: sssp.h
+harish_host.o: harish_host.h
+harish_kernels.o: harish_kernels.h
+okuyama_kernels.o: okuyama_kernels.h atomic_devfunc_types.h
+okuyama_host.o: okuyama_host.h
+atomic_devfunc.o: atomic_devfunc.h atomic_devfunc_types.h
+sssp_pape.o: sssp_pape.h
+pape_kernels.o: pape_kernels.h
+pape_cuda_host.o: pape_cuda_host.h
