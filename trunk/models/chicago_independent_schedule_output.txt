@@ -1,7 +1,0 @@
-budgets: 1000 4000 1500 3000 5000 
-Schedule at period 0: 07_96_0013 (748) 
-Schedule at period 1: 03_95_0001 (4000) 
-Schedule at period 2: 03_03_0101,03_96_0024 (1464) 
-Schedule at period 3: 07_06_0014 (472) 
-Schedule at period 4: 07_94_0027,07_97_0055 (4699) 
-Total schedule benefit PV: 156077
