@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Stivala"
+  given-names: "Alex"
+  orcid: "https://orcid.org/0000-0002-2442-4743"
+- family-names: "Stuckey"
+  given-names: "Peter"
+- family-names: "Wallace"
+  given-names: "Mark"
+title: "Selecting and scheduling an optimal subset of road network upgrades"
+url: "https://github.com/stivalaa/traffic_assignment"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Stivala"
+      given-names: "Alex"
+      orcid: "https://orcid.org/0000-0002-2442-4743"
+    - family-names: "Stuckey"
+      given-names: "Peter"
+    - family-names: "Wallace"
+      given-names: "Mark"
+  title: "Selecting and scheduling an optimal subset of road network upgrades"
+  doi: 10.48550/arXiv.2204.10175
+  url: https://arxiv.org/abs/2204.10175
+  year: 2011
